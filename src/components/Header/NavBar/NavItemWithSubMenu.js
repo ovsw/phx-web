@@ -1,10 +1,10 @@
 /** @jsx jsx */
 import React, {useState} from 'react' // eslint-disable-line
-import {jsx, Styled, Container} from 'theme-ui'
+import {jsx} from 'theme-ui'
 import {Link} from 'gatsby'
 
 const NavItemWithSubMenu = ({title, slug, children}) => {
-  const [isSubMenuVisible, setIsSubMenuVisible] = useState
+  // const [isSubMenuVisible, setIsSubMenuVisible] = useState(false)
 
   return (
     <>
