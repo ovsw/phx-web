@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "val-app-web",
+  "name": "phx-web",
   "version": "1.0.0",
   "author": "OvS Websites <ovi@ovswebsites.com>",
   "scripts": {
