@@ -17,6 +17,7 @@ import Helmet from 'react-helmet'
 import Hero from '../components/HomeHero'
 import Services from '../components/HomeServices'
 import Testimonials from '../components/HomeTestimonials'
+import Team from '../components/HomeTeam'
 
 const IndexPage = props => {
   const {data, errors} = props
@@ -55,6 +56,7 @@ const IndexPage = props => {
       <Hero />
       <Services />
       <Testimonials />
+      <Team />
       {/* <Container>
 
         <Link to='/contact-me/' sx={{variant: ['buttons.simpleAccent']}}>
