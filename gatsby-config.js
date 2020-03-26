@@ -83,28 +83,28 @@ module.exports = {
         slug: '/blog/',
         children: [
           {
-            title: 'Types of VA Loans',
-            slug: '/types-of-va-loans/'
+            title: 'Types of Loans',
+            slug: '/types-of-loans/'
+          },
+          {
+            title: 'Personal Finances',
+            slug: '/personal-finances/'
           },
           {
             title: 'Requirements',
             slug: '/requirements/'
           },
           {
-            title: 'Benefits',
-            slug: '/benefits/'
+            title: 'Benefits of Buying Now',
+            slug: '/benefits-of-buying-now/'
           },
           {
-            title: 'Finances',
-            slug: '/finances/'
+            title: 'Buyer Education',
+            slug: '/buyer-education/'
           },
           {
-            title: 'Tips',
-            slug: '/tips/'
-          },
-          {
-            title: 'Misc',
-            slug: '/misc/'
+            title: 'Realtor Information',
+            slug: '/realtor-information/'
           }
         ]
       },

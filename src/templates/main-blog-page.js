@@ -8,13 +8,15 @@ import {
 import GraphQLErrorList from '../components/graphql-error-list'
 import SEO from '../components/seo'
 import Layout from '../containers/layout'
-import RightSidebar from '../components/right-sidebar'
+import TwoColumnsRightSidebar from '../components/two-columns-right-sidebar'
 import BlogPostPreviewList from '../components/blog-post-preview-list'
+import Sidebar from '../components/sidebar'
+import BlogPageHeader from '../components/blog-page-header'
 
 // import {toPlainText} from '../lib/helpers'
 
 const BlogPage = props => {
-  const {data, errors, pageContext: {currentPage, numPages}} = props
+  const {data, errors, pageContext: {currentPage, numPages}, location} = props
 
   // const page = data && data.page
   const posts = data && data.posts
@@ -35,13 +37,18 @@ const BlogPage = props => {
       )}
 
       {posts &&
-      <RightSidebar title='Blog' noBlogLink>
-        <BlogPostPreviewList title='Blog Posts'
+      <TwoColumnsRightSidebar
+        path={location.pathname}
+        header={<BlogPageHeader title='Blog' />}
+        mainContent={<BlogPostPreviewList title='Blog Posts'
           rootSlug='/blog'
           nodes={postNodes}
           currentPage={currentPage}
-          numPages={numPages} />
-      </RightSidebar>}
+          numPages={numPages} />}
+        sidebarContent={<Sidebar />}
+      />
+
+      }
     </Layout>
   )
 }

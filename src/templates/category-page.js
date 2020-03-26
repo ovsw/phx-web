@@ -8,7 +8,7 @@ import {
 import GraphQLErrorList from '../components/graphql-error-list'
 import SEO from '../components/seo'
 import Layout from '../containers/layout'
-import RightSidebar from '../components/right-sidebar'
+import TwoColumnsRightSidebar from '../components/two-columns-right-sidebar'
 import BlogPostPreviewList from '../components/blog-post-preview-list'
 
 // import {toPlainText} from '../lib/helpers'
@@ -36,13 +36,13 @@ const CategoryPageTemplate = props => {
       )}
 
       {posts &&
-      <RightSidebar title={page.title} noBlogLink>
+      <TwoColumnsRightSidebar title={page.title} noBlogLink>
         <BlogPostPreviewList title='Category Posts'
           rootSlug={categorySlug}
           nodes={postNodes}
           currentPage={catCurrentPage}
           numPages={catNumPages} />
-      </RightSidebar>}
+      </TwoColumnsRightSidebar>}
 
     </Layout>
   )

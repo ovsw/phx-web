@@ -55,10 +55,10 @@ const loansList = [
     shortDescription: 'A conventional mortgage loan is secured by the backing of a private lender, unlike FHA or VA loans, which are guaranteed by the federal government.',
     description: 'A conventional mortgage loan is secured by the backing of a private lender, unlike FHA or VA loans, which are guaranteed by the federal government. Good credit, steady income and a 20% down payment means you will get a much lower fixed rate of interest. You should also keep in mind that the higher down payment you are making on a conventional mortgage loan will enable you to build a higher level of equity much faster. With this type of loan, if you cannot manage the 20% down payment, you may need to get Private Mortgage Insurance (PMI). Under the terms of a conventional mortgage loan, you will normally be required to pay the full amount of the loan at a fixed interest rate over the course of 30 years.',
     bullets: [
-      'secured by the backing of a private lender',
-      'lower fixed rate of interest possible',
-      'higher down payment = build a higher level of equity much faster',
-      'may need Private Mortgage Insurance (PMI)'
+      // 'secured by the backing of a private lender',
+      'Lower fixed rate of interest',
+      'Higher down payment – build equity faster',
+      'May need Private Mortgage Insurance (PMI)'
     ]
   },
   {
@@ -68,10 +68,10 @@ const loansList = [
     shortDescription: 'An FHA loan, which is backed by the Federal Housing Administration (FHA),is friendlier to first time home buyers than many other types of loans.',
     description: 'An FHA loan, which is backed by the Federal Housing Administration (FHA),is friendlier to first time home buyers than many other types of loans. A very low down payment of 3.5% required. Private Mortgage Insurance (PMI) is usually necessary when the down payment is this low, but you don\'t have to be approved in advance to obtain it. Another advantage is that credit score levels are not as stringent. Even with a bad credit score, bankruptcy, or past foreclosure, you may still be able to qualify for an FHA loan. Another big benefit of an FHA loan is that it is assumable, meaning that if you decide to sell your home at some future date, the new buyer can assume your mortgage. First Choice Loan Services has been approved as a mortgage lender by the FHA.',
     bullets: [
-      'friendlier to first time home buyers',
-      'backed by the Federal Housing Administration',
-      'low down payment of 3.5% required',
-      'may qualify even with bad credit, bancruptcy or foreclosure'
+      'Friendlier to first time homebuyers',
+      // 'backed by the Federal Housing Administration',
+      'Low down payment of 3.5%',
+      'May qualify even with bad credit / bankruptcy or foreclosure'
     ]
   },
   {
@@ -81,10 +81,22 @@ const loansList = [
     shortDescription: 'A VA loan is one of the benefits of serving in the United States Armed Forcesand available to those serving in the United States military currently or who have served in the past.',
     description: 'A VA loan is one of the benefits of serving in the United States Armed Forcesand are available for those who are either currently serving in the United States military or who have served in the past. Veterans are required to furnish the required paperwork regarding their military service and comply with the proper application process. The VA loan is backed by the federal government, requires no down payment and no mortgage insurance. Credit score requirements may be lower than for a conventional loan. VA loans can be used to refinance a property purchased under the VA program, to purchase specially adapted properties for those with service-related disabilities, and help Native American veterans purchase property on tribal-held land.',
     bullets: [
-      'for active or past members of the U.S. military',
-      'backed by the Federal Government',
-      'no down payment and no mortgage insurance',
-      'Credit score requirements may be lower'
+      'For active or past military members',
+      // 'backed by the Federal Government',
+      'No down payment or PMI',
+      'Lower credit score requirements'
+    ]
+  },
+  {
+    title: 'Adjustable Rate Mortgage',
+    slug: '/phoenix-adjustable-rate-mortgage/',
+    icon: 'adjustable-rate-mortgage',
+    shortDescription: 'You may want to purchase a new home but know that you’ll be moving to a new location within a few short years. One option to consider in this situation is a Phoenix Adjustable Rate Mortgage loan.',
+    description: 'A VA loan is one of the benefits of serving in the United States Armed Forcesand are available for those who are either currently serving in the United States military or who have served in the past. Veterans are required to furnish the required paperwork regarding their military service and comply with the proper application process. The VA loan is backed by the federal government, requires no down payment and no mortgage insurance. Credit score requirements may be lower than for a conventional loan. VA loans can be used to refinance a property purchased under the VA program, to purchase specially adapted properties for those with service-related disabilities, and help Native American veterans purchase property on tribal-held land.',
+    bullets: [
+      'Great for short-term home loans',
+      'Lower monthly mortgage payment',
+      'Lower interest rates during first years'
     ]
   },
   {
@@ -94,10 +106,10 @@ const loansList = [
     shortDescription: 'The USDA loan may be an option if you are a first-time home buyer with bad credit or a lower than average income.',
     description: 'The USDA loan may be an option if you are a first-time home buyer with bad credit or a lower than average income. Even if you have been turned down by other lenders for FHA or conventional loans, you may be able to get this type of loan. Backed by the federal government, there is no down payment required but you will have to pay Private Mortgage Insurance (PMI). You will have a very low rate of interest with this loan. The requirements are easy to meet and the repayment terms are quite liberal. There are 3 loan programs; one is for applicants who have incomes that are below, or seriously below, the national average. There are also grants available from the government for home improvement.',
     bullets: [
-      'good option for first-time home buyer with bad credit or lower income',
-      'Backed by the Federal Government',
-      'no down payment required, but Private Mortgage Insurance (PMI) needed',
-      'very low interest rate'
+      'Good option first-time homebuyers with bad credit or lower income',
+      // 'Backed by the Federal Government',
+      'No down payment, but PMI required',
+      'Very low interest rate'
     ]
   },
   {
@@ -107,10 +119,10 @@ const loansList = [
     shortDescription: 'Jumbo loans are plus-size loans that are for dollar amounts larger than conforming loan limits (threshold of $453,000 in most areas).',
     description: 'When we hear the term \'jumbo\', we think of large or plus size, which is the perfect definition of a Jumbo loan. Jumbo loans are plus-size loans that are for dollar amounts larger than conforming loan limits. In most areas of the US the threshold for jumbo loans is $453,000. Jumbo loans are considered riskier, so the requirements include higher down payments and better credit scores - often at least 700. Some Jumbo loans require the borrower to have some cash reserves available. The interest rate tends to be higher and the terms are stricter. However, there are a number of benefits to Jumbo loans, including the ability to purchase a more expensive home, and attractive tax breaks. VA Jumbo loans are also available for veterans.',
     bullets: [
-      'plus-size loans for larger $ amounts than conforming loan limits',
-      'attractive tax breaks',
-      'riskier, need credit scores  of at least 700',
-      'higher interest rate, stricter terms'
+      'For larger loan amounts than conforming loan limits',
+      // 'attractive tax breaks',
+      'Riskier, need minimum credit score of 700',
+      'Higher interest rate, stricter terms'
     ]
   }
 ]

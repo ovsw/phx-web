@@ -15,7 +15,11 @@ function BlogPostPreview (props) {
   // const thumbSize = props.largeThumbs ? {width: 700, height: 400} : {width: 370, height: 252}
 
   return (
-    <BackgroundImage fluid={props.mainImage.asset.fluid} className='newsItem' sx={{position: 'relative', display: 'flex', overflow: 'hidden'}} >
+    <BackgroundImage fluid={props.mainImage.asset.fluid} className='newsItem' sx={{
+      position: 'relative',
+      display: 'flex',
+      overflow: 'hidden'
+    }} >
 
       {/* <img
         src={imageUrlFor(buildImageObj(props.mainImage))
@@ -50,7 +54,6 @@ function BlogPostPreview (props) {
           '::before': {
             display: 'block',
             content: '""',
-            background: '#fff',
             width: '15rem',
             height: '7rem',
             position: 'absolute',
@@ -60,7 +63,7 @@ function BlogPostPreview (props) {
             margin: '0',
             transform: 'skewY(30deg)',
             transformOrigin: '100% 0',
-            bg: 'white'
+            bg: '#efefef'
           },
           span: {
             lineHeight: 0

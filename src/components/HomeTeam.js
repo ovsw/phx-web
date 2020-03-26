@@ -10,7 +10,6 @@ const HomeTeam = () => {
   const teamNodes = (useSiteTeam() || {})
     ? mapEdgesToNodes(useSiteTeam())
     : []
-  console.log(teamNodes)
   return (
     <section sx={{
       variant: 'sections.hpSection'

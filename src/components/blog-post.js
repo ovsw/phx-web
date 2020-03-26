@@ -1,7 +1,8 @@
+/** @jsx jsx */
+import React from 'react' // eslint-disable-line
+import {jsx} from 'theme-ui'
 import {format, distanceInWords, differenceInDays} from 'date-fns'
-import React from 'react'
-import {buildImageObj} from '../lib/helpers'
-import {imageUrlFor} from '../lib/image-url'
+// import {buildImageObj, imageUrlFor} from '../lib/helpers'
 import PortableText from './portableText'
 import SocialLinks from './social-links'
 // import Container from './container'
@@ -13,13 +14,12 @@ function BlogPost (props) {
   const {_rawBody, authors, categories, title, mainImage, publishedAt} = props
   return (
     <>
-
-      {/* <h1>{title}</h1> */}
-      <div className='in-blog-metatop'>
+      <h1 sx={{mt: 0}}>{title}</h1>
+      <div className='in-blog-metatop' sx={{color: 'textMuted'}}>
         <span> Published on: {format(publishedAt, 'MMMM Do, YYYY')} | Written by Jimmy Vercellino</span>
 
       </div>
-      <img style={{margin: '0 auto 2rem', display: 'block', width: '80%'}}
+      {/* <img style={{margin: '0 auto 2rem', display: 'block', width: '80%'}}
         src={imageUrlFor(buildImageObj(mainImage))
           .width(350)
           .height(300)
@@ -27,7 +27,7 @@ function BlogPost (props) {
           .auto('format')
           .url()}
         alt={mainImage.alt}
-      />
+      /> */}
       {_rawBody && <PortableText blocks={_rawBody} />}
 
       <div className='in-blog-metabottom mt-30'>
@@ -41,7 +41,11 @@ function BlogPost (props) {
         </span>
       </div>
 
-      <div className='admin-author-details pt-5'>
+      <ul className='author-socialicons' sx={{variant: 'lists.reset', mt: 3, li: {display: 'inline-block'}, a: {fontSize: 4, color: 'black', mr: 2}}}>
+        <SocialLinks />
+      </ul>
+
+      {/* <div className='admin-author-details pt-5'>
         <h4 className='mb-30'>Author</h4>
 
         <div className='admin-aouthor'>
@@ -61,7 +65,7 @@ function BlogPost (props) {
           </div>
         </div>
 
-      </div>
+      </div> */}
       {/* <!-- blog-details-wrapper -->   */}
 
     </>

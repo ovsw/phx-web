@@ -2,14 +2,12 @@
 import React from 'react' // eslint-disable-line
 import {jsx, Container} from 'theme-ui'
 
-import InnerPageHeader from './inner-page-header'
-
 // import styles from './blog-post.module.css'
 
-function GenericPage ({title, children, mainContent, sidebarContent}) {
+function GenericPage ({title, header, children, mainContent, sidebarContent}) {
   return (
     <>
-      <InnerPageHeader title={title} />
+      {header}
       <section sx={{py: [4, null, null, 5]}}>
         <Container sx={{
           display: 'flex',

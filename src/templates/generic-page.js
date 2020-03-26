@@ -6,6 +6,7 @@ import SEO from '../components/seo'
 import Layout from '../containers/layout'
 import TwoColumnsRightSidebar from '../components/two-columns-right-sidebar'
 import Sidebar from '../components/sidebar'
+import InnerPageHeader from '../components/inner-page-header'
 
 // import {toPlainText} from '../lib/helpers'
 
@@ -28,6 +29,7 @@ const GenericPageTemplate = props => {
       <TwoColumnsRightSidebar
         title={page.title}
         path={location.pathname}
+        header={<InnerPageHeader title={page.title} />}
         mainContent={<GenericPageContent {...page} />}
         sidebarContent={<Sidebar />}
       />

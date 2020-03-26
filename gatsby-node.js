@@ -68,16 +68,16 @@ async function createBlogPages (graphql, actions, reporter) {
     })
 
   // create blog pagination pages
-  const postsPerPage = 10
+  const postsPerPage = 6
   const numPages = Math.ceil(postEdges.length / postsPerPage)
 
   Array.from({length: numPages}).forEach((_, i) => {
     const path = i === 0 ? `/blog` : `/blog/${i + 1}`
-    reporter.info(`Creating blog post page: ${path}`)
+    reporter.info(`Creating main blog page: ${path}`)
 
     createPage({
       path,
-      component: require.resolve('./src/templates/blog-list-page.js'),
+      component: require.resolve('./src/templates/main-blog-page.js'),
       context: {
         limit: postsPerPage,
         skip: i * postsPerPage,
@@ -176,6 +176,6 @@ async function createGenericPages (graphql, actions, reporter) {
 }
 
 exports.createPages = async ({graphql, actions, reporter}) => {
-  // await createBlogPages(graphql, actions, reporter)
   await createGenericPages(graphql, actions, reporter)
+  await createBlogPages(graphql, actions, reporter)
 }

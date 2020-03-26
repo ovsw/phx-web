@@ -24,7 +24,7 @@ const Topbar = () => {
         }
       }
     }}>
-      <p>Short SEO Text can go Here</p>
+      <p>Phoenix Mortgage Lender</p>
       <p><a href='tel:480-800-8387'>Call Now: 480-800-8387</a></p>
     </div>
   )

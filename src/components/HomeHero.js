@@ -84,9 +84,9 @@ const HomeHero = () => {
             </h2>
             <p sx={{
               fontSize: [0, 1],
-              maxWidth: ['none', '70%', '80%', '90%'],
+              maxWidth: ['none', '70%', '80%', '85%'],
               mb: [4, null, 5, 4]
-            }}>I'm Jimmy Vercellino, an experienced professional with Phoenix lender Goldwater Mortgage. My team and I will work hard to provide a timely, efficient and excellent home loan process for you.
+            }}>I’m Jimmy Vercellino, an experienced mortgage originator with Phoenix lender Goldwater Bank Mortgage Division. My team and I work hard to provide a timely, efficient and excellent home loan process for you. We serve families nationwide.
             </p>
             <Link to='/contact-me/' sx={{variant: 'buttons.simple', mr: 2}}>
               <span>Contact</span>

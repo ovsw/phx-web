@@ -4,11 +4,13 @@ import GraphQLErrorList from '../components/graphql-error-list'
 import {toPlainText} from '../lib/helpers'
 import SEO from '../components/seo'
 import Layout from '../containers/layout'
-import RightSidebar from '../components/right-sidebar'
+import TwoColumnsRightSidebar from '../components/two-columns-right-sidebar'
 import BlogPost from '../components/blog-post'
+import Sidebar from '../components/sidebar'
+import BlogPageHeader from '../components/blog-page-header'
 
 const BlogPostTemplate = props => {
-  const {data, errors} = props
+  const {data, errors, location} = props
   const post = data && data.post
   return (
     <Layout>
@@ -21,7 +23,13 @@ const BlogPostTemplate = props => {
         </>
       )}
 
-      {post && <RightSidebar title={post.title}><BlogPost {...post} /></RightSidebar>}
+      {post && <TwoColumnsRightSidebar
+        path={location.pathname}
+        header={<BlogPageHeader title='Blog' />}
+        mainContent={<BlogPost {...post} />}
+        sidebarContent={<Sidebar />}
+      />
+      }
     </Layout>
   )
 }
