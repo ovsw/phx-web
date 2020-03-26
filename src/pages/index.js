@@ -18,6 +18,7 @@ import Hero from '../components/HomeHero'
 import Services from '../components/HomeServices'
 import Testimonials from '../components/HomeTestimonials'
 import Team from '../components/HomeTeam'
+import CTASection from '../components/CTASection'
 
 const IndexPage = props => {
   const {data, errors} = props
@@ -57,6 +58,10 @@ const IndexPage = props => {
       <Services />
       <Testimonials />
       <Team />
+      <CTASection buttonText='Try Now' link='/home-loan-calculator/'>
+        <h2 sx={{fontSize: [4, null, null, 6], my: 0}}>Home <span sx={{color: 'primary'}}>Loan Calculator</span></h2>
+        <p sx={{mt: 1}}>find out what you can expect to pay for your home loan</p>
+      </CTASection>
       {/* <Container>
 
         <Link to='/contact-me/' sx={{variant: ['buttons.simpleAccent']}}>
