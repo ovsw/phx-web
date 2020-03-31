@@ -38,7 +38,7 @@ const Sidebar = () => {
             target='_blank' rel='noopener noreferrer'
             sx={{
               variant: 'buttons.simpleAccent'
-            }}>Apply Now</Link>
+            }}>Calculate Now</Link>
         </div>
 
         <div className='social'>

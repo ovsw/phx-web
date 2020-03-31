@@ -6,6 +6,45 @@
 
 // You can delete this file if you're not using it
 
+// export const onInitialClientRender = () => {
+//   (
+//     function (h,b) { 
+//     var w = window, d = document, s = 'script', x, y; 
+//     w['__hb_namespace'] = h;
+//     w[h] = w[h] || function () {
+//       (w[h].q=w[h].q||[]).push(arguments) };
+//       y = d.createElement(s); 
+//       x = d.getElementsByTagName(s)[0]; 
+//       y.async = 1; 
+//       y.src = b; 
+//       x.parentNode.insertBefore(y,x) 
+//       }
+//   )('Homebot','https://embed.homebotapp.com/lgw/v1/widget.js');
+//   Homebot('#homebot_homeowner', '03bb83cda45c729b233efed7893784d286d9d7ee1b085bd6')
+// }
+
+export const onRouteUpdate = ({ location, prevLocation }) => {
+  // console.log('new pathname', location.pathname)
+  // console.log('old pathname', prevLocation ? prevLocation.pathname : null)
+  if(location.pathname === '/house-estimator/') {
+    (
+      function (h,b) { 
+      var w = window, d = document, s = 'script', x, y; 
+      w['__hb_namespace'] = h;
+      w[h] = w[h] || function () {
+        (w[h].q=w[h].q||[]).push(arguments) };
+        y = d.createElement(s); 
+        x = d.getElementsByTagName(s)[0]; 
+        y.async = 1; 
+        y.src = b; 
+        x.parentNode.insertBefore(y,x) 
+        }
+    )('Homebot','https://embed.homebotapp.com/lgw/v1/widget.js');
+    Homebot('#homebot_homeowner', '03bb83cda45c729b233efed7893784d286d9d7ee1b085bd6')
+  }
+}
+
+
 import AppContextProvider from './src/context'
 export const wrapRootElement = AppContextProvider
 
