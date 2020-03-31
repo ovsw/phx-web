@@ -2,6 +2,10 @@
 import React from 'react' // eslint-disable-line
 import {jsx} from 'theme-ui'
 
+import {FaPhone, FaCalculator} from 'react-icons/fa'
+
+import {Link} from 'gatsby'
+
 const Topbar = () => {
   return (
     <div sx={{
@@ -18,14 +22,21 @@ const Topbar = () => {
         a: {
           color: 'white',
           textDecoration: 'none',
+          ml:3,
           ':hover': {
             color: 'primary'
+          },
+          '&.accented': {
+            color: 'primary',
+            ':hover': {
+              color: 'white'
+            }
           }
         }
       }
     }}>
       <p>Phoenix Mortgage Lender</p>
-      <p><a href='tel:480-800-8387'>Call Now: 480-800-8387</a></p>
+      <p><Link to='/home-loan-calculator/' className="accented"><FaCalculator/> Loan Calculator</Link > <a href='tel:480-800-8387'><FaPhone/> 480-800-8387</a></p>
     </div>
   )
 }
