@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-sitemap: https://www.valoansforvets.com/sitemap.xml
+sitemap: https://www.phxhomeloan.com/sitemap.xml

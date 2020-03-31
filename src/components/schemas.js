@@ -3,7 +3,7 @@ export const websiteSchema = {
   '@type': 'WebSite',
   'name': 'VA Loan Specialist in Phoenix AZ Jimmy Vercellino',
   'alternateName': 'VA Loan Specialist in Phoenix AZ Jimmy Vercellino',
-  'url': 'https://www.valoansforvets.com/'
+  'url': 'https://www.phxhomeloan.com/'
 }
 
 export const localBusinessSchema = {
@@ -11,9 +11,9 @@ export const localBusinessSchema = {
   '@type': 'localbusiness',
   'name': 'VA Loan Specialist in Phoenix AZ Jimmy Vercellino',
   'telephone': '602-908-5849',
-  'url': 'https://www.valoansforvets.com/',
-  'logo': 'https://www.valoansforvets.com/images/logo/logo.png',
-  'image': 'https://www.valoansforvets.com/static/d6d9388d4d28912fa0c135cd7584fb2b/de929/then-now1.png',
+  'url': 'https://www.phxhomeloan.com/',
+  'logo': 'https://www.phxhomeloan.com/images/logo/logo.png',
+  'image': 'https://www.phxhomeloan.com/static/d6d9388d4d28912fa0c135cd7584fb2b/de929/then-now1.png',
   'pricerange': '$$$',
   'description': 'Arizona VA Loan Specialist Serving Veterans NATIONWIDE. My Mission - To provide and assist all veterans and active duty military with ALL of their VA Home Loan Financing Needs! Get a VA Loan. I am here to help you achieve home ownership. Call Me At 602-908-5849.',
   'address': {
@@ -40,8 +40,8 @@ export const professionalServiceSchema = {
   '@context': 'http://www.schema.org',
   '@type': 'professionalService',
   'name': 'VA Loan Specialist in Phoenix AZ Jimmy Vercellino',
-  'url': 'https://www.valoansforvets.com/',
-  'logo': 'https://www.valoansforvets.com/images/logo/logo.png',
+  'url': 'https://www.phxhomeloan.com/',
+  'logo': 'https://www.phxhomeloan.com/images/logo/logo.png',
   // UPDATE WITH NEW IMAGE
   'image': 'https://cdn.sanity.io/images/0x25ml7u/production/9bb96cd373561044f7c3159f22ac53df465bd0c7-5760x3840.jpg?w=700&h=467&fit=crop&fm=webp',
   'alternateName': 'VA Loan Specialist in Phoenix AZ Jimmy Vercellino',
@@ -113,9 +113,9 @@ export const professionalServiceSchema = {
       'opens': '8AM-5PM'
     }],
   'sameAs': [
-    'https://twitter.com/VALoansForVets',
+    'https://twitter.com/phxhomeloan',
     'https://www.youtube.com/c/JimmyVercellino',
-    'https://www.facebook.com/VALoansForVets/'
+    'https://www.facebook.com/phxhomeloan/'
   ],
   'geo': {
     '@type': 'GeoCoordinates',
@@ -197,8 +197,8 @@ export const organizationSchema = {
   '@context': 'http://schema.org/',
   '@type': 'Organization',
   'name': 'VA Loan Specialist in Phoenix AZ Jimmy Vercellino',
-  'url': 'https://www.valoansforvets.com/',
-  'logo': 'https://www.valoansforvets.com/images/logo/logo.png',
+  'url': 'https://www.phxhomeloan.com/',
+  'logo': 'https://www.phxhomeloan.com/images/logo/logo.png',
   'description': 'Jimmy Vercellino served with the Marine Corps and is now a VA Loan Specialist. He can help you get the VA Home Loan you need to buy the house you want.',
   'aggregateRating': {
     '@type': 'AggregateRating',
@@ -238,7 +238,7 @@ export const reviewSchema = {
 export const faqPageSchema = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
-  'url': 'https://www.valoansforvets.com/',
+  'url': 'https://www.phxhomeloan.com/',
   'mainEntity': [{
     '@type': 'Question',
     'name': 'What is a VA Home Loan?',
