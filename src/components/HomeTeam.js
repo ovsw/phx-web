@@ -15,7 +15,7 @@ const HomeTeam = () => {
       variant: 'sections.hpSection'
     }}>
       <Container>
-        <span sx={{variant: 'text.superHeading'}}>Highly Motivated, Truly Dedicated</span>
+        <span sx={{variant: 'text.superHeading'}}>The Highly Motivated</span>
         <h2 sx={{variant: 'text.mainHeading', mb: 4}}>Vercellino <span sx={{color: 'primary'}}>Team</span></h2>
 
         <div sx={{
