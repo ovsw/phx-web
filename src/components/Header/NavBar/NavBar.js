@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import React, {useContext} from 'react' // eslint-disable-line
-import {jsx, Styled, Container} from 'theme-ui'
+import {jsx} from 'theme-ui'
 
 import {appContext} from '../../../context'
 

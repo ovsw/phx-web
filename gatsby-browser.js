@@ -52,7 +52,7 @@ export const wrapRootElement = AppContextProvider
 export const onClientEntry = () => {
   // IntersectionObserver polyfill for gatsby-background-image (Safari, IE)
   if (typeof window.IntersectionObserver === `undefined`) {
-    import(`intersection-observer`)
+    import(`intersection-observer`) // eslint-disable-line
     console.log(`# IntersectionObserver is polyfilled!`)
   }
 

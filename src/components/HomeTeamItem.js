@@ -43,7 +43,7 @@ const HomeTestimonialItem = ({name, role, email, phone, nmls, mainImage, _rawBio
             overflowWrap: 'break-word',
             wordWrap: 'break-word',
             wordBreak: 'break-all',
-            wordBreak: 'break-word',
+            wordBreak: 'break-word', // eslint-disable-line
             hyphens: 'auto',
             fontSize: '0.8rem'
           }

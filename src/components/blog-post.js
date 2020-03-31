@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import React from 'react' // eslint-disable-line
 import {jsx} from 'theme-ui'
-import {format, distanceInWords, differenceInDays} from 'date-fns'
+import {format} from 'date-fns' // distanceInWords, differenceInDays
 // import {buildImageObj, imageUrlFor} from '../lib/helpers'
 import PortableText from './portableText'
 import SocialLinks from './social-links'
