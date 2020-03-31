@@ -54,6 +54,7 @@
     "react-icons": "^3.9.0",
     "react-modal-video": "^1.2.3",
     "react-slick": "^0.25.2",
+    "react-tabs": "^3.1.0",
     "react-youtube": "^7.9.0",
     "theme-ui": "^0.3.1"
   }

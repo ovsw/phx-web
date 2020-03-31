@@ -1,7 +1,11 @@
 /** @jsx jsx */
 import React from 'react' // eslint-disable-line
 import {jsx, Container} from 'theme-ui'
+import {Link} from 'gatsby'
 import HomeServicesItem from './HomeServicesItem'
+
+import {Tab, Tabs, TabList, TabPanel} from 'react-tabs'
+import 'react-tabs/style/react-tabs.css'
 
 function HomeServices (props) {
   return (
@@ -22,6 +26,21 @@ function HomeServices (props) {
           ))}
 
         </div>
+
+        <Tabs>
+          <TabList>
+            {loansList.map((item, i) => (
+              <Tab key={item.title}>{item.title} Loan</Tab>
+            ))}
+          </TabList>
+
+          {loansList.map((item, i) => (
+            <TabPanel key={item.title}>
+              <p>{item.description} <Link to={item.slug} sx={{color: 'primary'}}>Read More</Link></p>
+            </TabPanel>
+          ))}
+
+        </Tabs>
 
       </Container>
     </section>
