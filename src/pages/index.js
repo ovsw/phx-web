@@ -20,6 +20,7 @@ import Services from '../components/HomeServices'
 import Testimonials from '../components/HomeTestimonials'
 import CTASection from '../components/CTASection'
 import HomeTeam from '../components/HomeTeam'
+import HomeFAQs from '../components/HomeFAQs'
 
 const IndexPage = props => {
   const {data, errors} = props
@@ -78,6 +79,8 @@ const IndexPage = props => {
           browseMoreHref='/blog/'
         />
       )}
+
+      <HomeFAQs />
 
     </Layout>
   )
