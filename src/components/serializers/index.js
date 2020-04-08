@@ -13,6 +13,8 @@ import Embed from './Embed'
 
 import {GoLinkExternal} from 'react-icons/go'
 
+import config from '../../../config/website'
+
 const YTopts = {
   width: '100%',
   playerVars: { // https://developers.google.com/youtube/player_parameters
@@ -53,7 +55,11 @@ const serializers = {
         //   ? <a href={href} className='externalLink' rel='noopener noreferrer' target='_blank'>{children}</a>
         //   : <a href={href}>{children}</a>
       } else {
-        return <Link to={href}>{children}</Link>
+        if (href.charAt(0) === '/') {
+          return <a href={`${config.siteUrl}${href}`}>{children}</a>
+        } else {
+          return <a href={href}>{children}</a>
+        }
       }
     }
   }
