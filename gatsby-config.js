@@ -115,7 +115,7 @@ module.exports = {
       },
       {
         title: 'Contact',
-        slug: '/contact-me/',
+        slug: '/contact/',
         children: []
       }
     ]
