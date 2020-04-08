@@ -54,14 +54,14 @@ const loansWrapperStyles = {
   flexWrap: 'wrap',
   justifyContent: 'center',
   '.loanItemWrapper': {
-    width: ['full', 'null', '1/2', '1/3'],
+    width: ['full', null, '1/2', '1/3'],
     pr: [null, null, 3, 4],
     mb: [4, null, 3, 4]
   },
-  '>div:nth-of-type(2)': {
+  '>div:nth-of-type(2n)': {
     pr: [null, null, 0, 4]
   },
-  '>div:nth-of-type(3)': {
+  '>div:nth-of-type(3n)': {
     pr: [null, null, null, 0]
   }
 }

@@ -9,7 +9,7 @@ import {FaArrowAltCircleRight, FaCheck} from 'react-icons/fa'
 
 const HomeServicesItem = ({title, slug, shortDescription, description, bullets, icon = 'adjustable-rate-mortgage', i}) => {
   return (
-    <Link to={slug} sx={linkWrapperStyles}>
+    <Link to={slug} sx={linkWrapperStyles} className='linkWrapper'>
       <div className='icon' sx={iconStyles}>
         <span><Icon symbol={icon} /></span>
       </div>
@@ -81,7 +81,7 @@ const iconStyles = {
 
 const contentWrapperStyles = {
   transition: 'background-color 300ms ease',
-
+  width: 'full',
   bg: 'mutedBg',
   px: 4,
   pt: '3rem',
