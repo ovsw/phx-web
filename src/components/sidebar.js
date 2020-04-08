@@ -22,9 +22,9 @@ const Sidebar = () => {
         </div>
 
         <div className='accent'>
-          <h4><span>Home Loan Calculator</span></h4>
+          <h4><span>Mortgage Calculator</span></h4>
           <p>Find out what you can expect to pay for your home loan.</p>
-          <Link to='/home-loan-calculator/'
+          <Link to='/mortgage-calculator/'
             target='_blank' rel='noopener noreferrer'
             sx={{
               variant: 'buttons.simpleAccent'

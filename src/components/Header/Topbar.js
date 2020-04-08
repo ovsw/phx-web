@@ -22,7 +22,7 @@ const Topbar = () => {
         a: {
           color: 'white',
           textDecoration: 'none',
-          ml:3,
+          ml: 3,
           ':hover': {
             color: 'primary'
           },
@@ -36,7 +36,7 @@ const Topbar = () => {
       }
     }}>
       <p>Phoenix Mortgage Lender</p>
-      <p><Link to='/home-loan-calculator/' className="accented"><FaCalculator/> Loan Calculator</Link > <a href='tel:480-800-8387'><FaPhone/> 480-800-8387</a></p>
+      <p><Link to='/mortgage-calculator/' className='accented'><FaCalculator /> Mortgage Calculator</Link > <a href='tel:480-800-8387'><FaPhone /> 480-800-8387</a></p>
     </div>
   )
 }
