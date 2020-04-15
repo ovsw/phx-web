@@ -15,7 +15,7 @@ const HomeServicesItem = ({title, slug, shortDescription, description, bullets, 
       </div>
       <div className='contentWrapper' sx={contentWrapperStyles}>
         <h3 sx={{
-          fontSize: [(i === 0 || i === 3) ? '3' : '5', null, null, i === 0 ? '4' : '5', (i === 0 || i === 3) ? '5' : '6'],
+          fontSize: [(i === 0) ? '3' : '5', null, null, i === 0 ? '4' : '5', (i === 0) ? '5' : '6'],
           lineHeight: '2.2rem'
         }}><span className='overTitle'>Phoenix</span><span className='accentTitle'>{title}</span> Loan</h3>
         {/* <p>{shortDescription} <br /> <Link to={slug}>Learn More <span sx={{fontSize: '0.7em'}}><FaChevronRight /></span></Link></p> */}

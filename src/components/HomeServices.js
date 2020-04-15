@@ -107,7 +107,7 @@ const loansList = [
     ]
   },
   {
-    title: 'Adjustable Rate Mortgage',
+    title: 'ARM',
     slug: '/phoenix-adjustable-rate-mortgage/',
     icon: 'adjustable-rate-mortgage',
     shortDescription: 'You may want to purchase a new home but know that you’ll be moving to a new location within a few short years. One option to consider in this situation is a Phoenix Adjustable Rate Mortgage loan.',
