@@ -13,7 +13,7 @@ const HomeTestimonials = () => {
       <Container>
         <span sx={{variant: 'text.superHeading', color: 'white'}}>Reviews from Our</span>
         <h2 sx={{variant: 'text.mainHeading', mb: 4, color: 'primary'}}>Satisfied <span sx={{color: 'white'}}>Clients</span></h2>
-        <div className='embedsocial-reviews' data-ref='f30fd816a7ba7878a12bd537276ebd3fafc995fe' />
+        <div className='embedsocial-reviews' data-ref='dbf6aa080360d368baaa5c359edfb1d06eab94c0' />
 
         {/* {testimonialsContent.map(testimonial => (
           <div key={testimonial.name}>
