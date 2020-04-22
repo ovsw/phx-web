@@ -68,10 +68,10 @@ const HomeHero = () => {
               fontFamily: 'heading',
               fontWeight: 'heading',
               lineHeight: 'none',
-              fontSize: [3, '3.3rem', '3.5rem', '4.15rem', '5.2rem'],
+              fontSize: [3, '3.3rem', '3.4rem', '4.15rem', '5rem'],
               letterSpacing: '-.03em',
               mt: [0, null, 3, 0],
-              mb: [4, null, 5, 4]
+              mb: [4, null,  5, 4]
             }}>
               <span sx={{
                 color: 'white',
