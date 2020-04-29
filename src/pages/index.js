@@ -60,7 +60,7 @@ const IndexPage = props => {
       <HomeVideo />
       <CTASection  buttonText='Learn More' link='/'>
         <h2 sx={{fontSize: [4, null, null, 6], my: 0, fontStyle: 'italic'}}>"<span sx={{color: 'primary'}}>Top 100</span>  Mortgage Companies in US"</h2>
-        <p sx={{mt: 1, ml: 3}}> - according to Mortgage Execute Magazine</p>
+        <p sx={{mt: 1, ml: 3}}> - according to Mortgage Executive Magazine</p>
       </CTASection>
       <Services />
       <Testimonials />

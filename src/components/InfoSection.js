@@ -10,7 +10,7 @@ import {FaArrowCircleRight} from 'react-icons/fa'
 const InfoSection = ({children, buttonText = 'button text', link = '/'}) => {
   const {top100Badge} = useStaticQuery(graphql`
     query GET_TOP_100_BADGE_IMAGE {
-      top100Badge: file(relativePath: { eq: "top-100-mortgage-companies-in-america-2019-execute-magazine.png" }) {
+      top100Badge: file(relativePath: { eq: "top-100-mortgage-companies-in-america-2019-executive-magazine.png" }) {
         childImageSharp {
           fixed(width: 397) {
             ...GatsbyImageSharpFixed_withWebp_noBase64
@@ -40,7 +40,7 @@ const InfoSection = ({children, buttonText = 'button text', link = '/'}) => {
           {children}
         </div>
         {/* <Link to={link}>
-         <Img fixed={top100Badge.childImageSharp.fixed} alt='Goldwater Bank declared top 100 Morgage Companies in America by Mortgage Execute Magazine'/>
+         <Img fixed={top100Badge.childImageSharp.fixed} alt='Goldwater Bank declared top 100 Morgage Companies in America by Mortgage Executive Magazine'/>
         </Link> */}
       </Container>
     </section>
