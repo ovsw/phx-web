@@ -68,7 +68,7 @@ const HomeHero = () => {
               fontFamily: 'heading',
               fontWeight: 'heading',
               lineHeight: 'none',
-              fontSize: [3, '3.3rem', '3.4rem', '4.15rem', '5rem'],
+              fontSize: [3, '3.3rem', '3.4rem', '4rem', '4.7rem'],
               letterSpacing: '-.03em',
               mt: [0, null, 3, 0],
               mb: [4, null,  5, 4]
@@ -84,7 +84,7 @@ const HomeHero = () => {
             </h2>
             <p sx={{
               fontSize: [0, 1],
-              maxWidth: ['none', '70%', '80%', '85%'],
+              maxWidth: ['none', '70%', '75%', '82%'],
               mb: [4, null, 5, 4]
             }}>I’m Jimmy Vercellino, an experienced mortgage originator with Phoenix lender Goldwater Bank Mortgage Division. My team and I work hard to provide a timely, efficient and excellent home loan process for you. We serve families nationwide.
             </p>
