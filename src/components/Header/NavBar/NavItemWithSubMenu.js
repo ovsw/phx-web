@@ -6,9 +6,11 @@ import {Link} from 'gatsby'
 const NavItemWithSubMenu = ({title, slug, children}) => {
   // const [isSubMenuVisible, setIsSubMenuVisible] = useState(false)
 
+  const mainItem = slug !== '#' ? <Link to={slug}>{title}</Link> : <a sx={{cursor: "pointer"}}>{title}</a>
+
   return (
     <>
-      <Link to={slug}>{title}</Link>
+      {mainItem}
       <ul className='subMenuWrapperUl'>
         {children.map(({title, slug}) => (
           <li key={slug} >

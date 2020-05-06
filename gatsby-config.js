@@ -40,7 +40,7 @@ module.exports = {
           },
           {
             title: 'Refinancing',
-            slug: '/refinancing/'
+            slug: '/refinance-home-loan/'
           },
           {
             title: 'What is Mortgage Insurance (PMI)',
