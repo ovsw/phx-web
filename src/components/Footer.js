@@ -102,7 +102,10 @@ const Footer = () => {
       </BackgroundImage> */}
       <div sx={{bg: 'black', color: 'white', textAlign: 'center', py: 1, fontSize: 0}}>
         <Container>
-          <p>Copytight &copy; 2019-{new Date().getFullYear()} Goldwater Bank LLC. All rights reserved. | Website by <a href='https://ovswebsites.com' target='_blank' sx={{color: '#ff5071'}}>OVS Websites</a>.</p>
+          <p>Copyright &copy; 2019-{new Date().getFullYear()} 
+          Jimmy Vercellino NMLS #184169
+          {/* Goldwater Bank LLC */}
+          . All rights reserved. | Website by <a href='https://ovswebsites.com' target='_blank' sx={{color: '#ff5071'}}>OVS Websites</a>.</p>
         </Container>
 
       </div>
