@@ -187,6 +187,16 @@ module.exports = {
         // sampleRate: 5,
         // siteSpeedSampleRate: 10
       }
+    },
+    {
+      resolve: `gatsby-plugin-netlify`,
+      options: {
+        // headers: {}, // option to add more headers. `Link` headers are transformed by the below criteria
+        // allPageHeaders: [], // option to add headers for all pages. `Link` headers are transformed by the below criteria
+        mergeSecurityHeaders: true, // boolean to turn off the default security headers
+        mergeLinkHeaders: true, // boolean to turn off the default gatsby js headers
+        mergeCachingHeaders: true // boolean to turn off the default caching headers
+      }
     }
   ]
 }
