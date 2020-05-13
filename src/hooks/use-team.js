@@ -17,7 +17,7 @@ export const useSiteTeam = () => {
                 ...SanityImage
                 alt
                 asset {
-                  fluid(maxWidth: 900) {
+                  fluid(maxWidth: 736) {
                     ...GatsbySanityImageFluid
                   }
                 }
