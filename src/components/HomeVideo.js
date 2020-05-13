@@ -15,8 +15,8 @@ function HomeVideo (props) {
     query {
       videoBgImage: file(relativePath: { eq: "jimmy-vercellino-interview-on-good-morning-arizona.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 640) {
-            ...GatsbyImageSharpFluid
+          fluid(maxWidth: 736) {
+            ...GatsbyImageSharpFluid_withWebp
           }
         }
       }
@@ -28,18 +28,19 @@ function HomeVideo (props) {
 
     <section sx={{variant: 'sections.hpSection', bg: '#fdf9f2'}}>
       <Container>
-        <div sx={{mb: 5}}>
+        <div sx={{mb: [2,null, null, null, 5]}}>
           <span sx={{variant: 'text.superHeading'}}>Meet</span>
           <h2 sx={{variant: 'text.mainHeading', mb: 0}}> Jimmy <span sx={{color: 'primary'}}>Vercellino</span></h2>
         </div>
 
         <div sx={{
           display: 'flex',
-          flexWrap: ['nowrap', null, null, 'wrap']
+          flexWrap: ['wrap', null, null, 'nowrap']
         }}>
           <div sx={{
             width: ['full', null, null, '1/2'],
-            pr: ['none', null, null, 5]
+            pr: ['none', null, null, 5],
+            pb: ['4', null, null, 0]
           }}>
             <h3>Need content here</h3>
             <p>Our functionality is unparalleled, but our back-end performance and non-complex use is invariably considered a remarkable achievement taking into account this month's financial state of things!
