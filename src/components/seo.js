@@ -35,13 +35,13 @@ function SEO ({description, meta, title, seoTitle, image}) {
             <html lang={config.siteLanguage} />
             <title>{siteTitle}</title>
 
-            <link rel="preconnect" href="https://stats.g.doubleclick.net"></link>
-            <link rel="preconnect" href="https://www.google-analytics.com"></link>
-            <link rel="preconnect" href="https://www.google.com"></link>
-            <link rel="preconnect" href="https://lh3.googleusercontent.com"></link>
-            <link rel="preconnect" href="https://fonts.gstatic.com"></link>
-            <link rel="preconnect" href="https://lh6.googleusercontent.com"></link>
-            
+            <link rel="preconnect" href="https://stats.g.doubleclick.net" crossorigin></link>
+            <link rel="preconnect" href="https://www.google-analytics.com" crossorigin></link>
+            <link rel="preconnect" href="https://www.google.com" crossorigin></link>
+            <link rel="preconnect" href="https://lh3.googleusercontent.com" crossorigin></link>
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin></link>
+            <link rel="preconnect" href="https://lh6.googleusercontent.com" crossorigin></link>
+
             <link rel='apple-touch-icon' sizes='180x180' href='/favicons/apple-touch-icon.png' />
             <link rel='icon' type='image/png' sizes='32x32' href='/favicons/favicon-32x32.png' />
             <link rel='mask-icon' href='/favicons/safari-pinned-tab.svg' color={config.themeColor} />
